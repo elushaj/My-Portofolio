@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
+import { SearchBar } from './SearchBar'
+
+import '../githubProjects/projects.css'
 const Projects = () => {
+
+
+
+
   return (
-    <div>Projects</div>
+    <div><SearchBar/>
+  </div>
   )
 }
 

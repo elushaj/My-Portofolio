@@ -1,4 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 body{
-background-color:black;
+    background-color: rgba(188,191,217,255);
 
 }
+
+.content{
+    position: absolute;
+	top:10px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+    align-items: center;
+    text-align: center;color: aliceblue;
+  
+}
+.headerNav {
+    padding: 0px 4rem ;
+ 
+    color: #fff;
+}
+    .headerContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+      .headerContainer ul {
+        display: flex;
+        list-style: none;}
+        .headerContainer li {
+          margin-left: 4.2rem;
+         } a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1rem;
+            line-height: 26px;
+            color: #fff;
+            transition: letter-spacing 0.5s ease;
+            display: inline-block;
+         }
+           a:hover {
+              letter-spacing: 2px;
+            }
+         
+  .logo {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 2.4px;
+   
+   
+  }
+  .hamburger {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+.text-content{
+display: block;
+align-items: center;
+text-align: left;
+padding : 80px 0rem 0rem 5rem;
+height: min-content;
+
+
+}
+.avatar:hover{
+    cursor: grab;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding-bottom: 5rem;
+-webkit-text-stroke-width: 5px;
+}
+.description{
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+h5{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media screen and (max-width: 940px) {
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      top: -100vh;
+      left: 0;
+      position: absolute;
+      justify-content: space-between;
+ 
+      background-color:rgba(179, 30, 224, 0.479);
+      transition: 0.3s;
+     
+    }
+    .icon:hover {
+        cursor: pointer;
+        transform: scale(1.5);
+      
+        
+      }
+      .icon{
+        margin-left: 1rem;
+      }
+    .headerNav{
+        padding: 0 ;
+        display: flex ;
+    }
+    .text-content{padding: 2px;}
+    .headerContainer li{margin-left:0 ;}
+  .menu{
+    display: none;
+  }
+  h5{
+    display: none;
+  }
+    .active {
+      top: 80px;
+    }
+    .mobile-menu li {
+      padding: 1.2rem 1rem;
+      margin: 0 1rem;
+      border-bottom: 1px solid #ccc;
+      list-style: none;
+      
+    }
+    .title{
+        font-size: 4.2rem;
+    }
+  
+    .description{width: 100%;}
+  
+    .mobile-nav {
+      margin: 1rem 0;
+    }
+   
+    .hamburger {
+      display: block;
+  
+  
+    }
+  
+    .hamburger:hover {
+      cursor: pointer;
+      transform: scale(0.8);
+      transition: 0.5s;
+  
+    }
+    .nav-menu {
+      display: none;
+    }
+    .nav-menu li:hover{
+      cursor: pointer;
+      color: #222;
+    }
+ 
+  }

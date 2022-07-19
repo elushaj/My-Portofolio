@@ -5,8 +5,10 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { RiFacebookCircleLine, RiLinkedinBoxFill} from "react-icons/ri";
 import AlertBox from "./AlertBox";
 import "./contact.css";
+
 import Avatar from "../header/Avatar";
 import { Link } from "react-router-dom";
+
 function Contact() {
   const form = useRef();
   const isEmpty = (value) => value.trim() === '';
@@ -93,7 +95,7 @@ console.log(values)
 
   return (
 
-    <div name='contact'className="threejs-wrapper">    <Avatar/>
+    <div name='contact'className="threejs-wrapper">    <Avatar className='info'/>
       <div className="contact-content contact-container">
         {status &&Object.keys(formErrors).length===0&&isSubmit?( <AlertBox className="alertbox" />):console.log('Failed!')}
         <h2><i>Reach me out!</i></h2>
