@@ -56,7 +56,7 @@ const handleNav=()=>setNav(!nav)
         <h1 className="title">Hi! I am Elmenda, <br></br>web developer.</h1>
         <h1 className="description">
           Creating responsive websites with great user-experience remains my
-          golden aim!
+          golden aim.
         </h1>
 
         <h5>
